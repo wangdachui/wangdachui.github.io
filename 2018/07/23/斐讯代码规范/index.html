@@ -396,7 +396,7 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>###目录</p>
+        <p>##目录</p>
 <ul>
 <li>Language</li>
 <li>Code Organization</li>
@@ -426,14 +426,14 @@ height:50vh;
 <li>Line Breaks<br>Language</li>
 </ul>
 <hr>
-<p>###Language</p>
+<p>##Language</p>
 <p>使用正确英文拼写</p>
 <p><strong>Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UIColor *myColor = [UIColor whiteColor];</span><br></pre></td></tr></table></figure>
 <p><strong>Not Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UIColor *myColur = [UIColor whiteColor];</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Code Organization</p>
+<p>##Code Organization</p>
 <p>使用#pragma标记 - 对功能分组和方法进行分类。#pragma mark上面加空行，下面不加空行。mark后面不需要加：，-前后都加空格。格式如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#pragma mark - Lifecycle</span><br><span class="line">- (instancetype)init &#123;&#125;</span><br><span class="line">- (void)dealloc &#123;&#125;</span><br><span class="line">- (void)viewDidLoad &#123;&#125;</span><br><span class="line">- (void)viewWillAppear:(BOOL)animated &#123;&#125;</span><br><span class="line">- (void)didReceiveMemoryWarning &#123;&#125;</span><br><span class="line"></span><br><span class="line">#pragma mark - Setters &amp; Getters</span><br><span class="line">- (void)setCustomProperty:(id)value &#123;&#125;</span><br><span class="line">- (id)customProperty &#123;&#125;</span><br><span class="line"></span><br><span class="line">#pragma mark - IBActions</span><br><span class="line">- (IBAction)submitData:(id)sender &#123;&#125;</span><br><span class="line"></span><br><span class="line">#pragma mark - Public</span><br><span class="line">- (void)publicMethod &#123;&#125;</span><br><span class="line"></span><br><span class="line">#pragma mark - Protocol conformance</span><br><span class="line">#pragma mark - UITextFieldDelegate</span><br><span class="line">#pragma mark - UITableViewDataSource</span><br><span class="line">#pragma mark - UITableViewDelegate</span><br><span class="line"></span><br><span class="line">#pragma mark - NSCopying</span><br><span class="line">- (id)copyWithZone:(NSZone *)zone &#123;&#125;</span><br><span class="line"></span><br><span class="line">#pragma mark - NSObject</span><br><span class="line">- (NSString *)description &#123;&#125;</span><br></pre></td></tr></table></figure>
 <hr>
@@ -452,13 +452,13 @@ height:50vh;
 <p><strong>Not Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// colon-aligning makes the block indentation hard to read</span><br><span class="line">[UIView animateWithDuration:1.0</span><br><span class="line">                 animations:^&#123;</span><br><span class="line">                     // something</span><br><span class="line">                 &#125;</span><br><span class="line">                 completion:^(BOOL finished) &#123;</span><br><span class="line">                     // something</span><br><span class="line">                 &#125;];</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Comments</p>
+<p>##Comments</p>
 <p>使用注释来解释为什么某个特定的代码会执行某些操作。注释必须保持最新或删除无用的注释。<br>一般应避免评论，因为代码应尽可能自行记录，只需要间歇的，少数几行的解释。</p>
 <p>1 public方法必须写标准注释</p>
 <p>2 复杂宏要写注释</p>
 <p>3 注释用中文</p>
 <hr>
-<p>###Naming</p>
+<p>##Naming</p>
 <p>应尽可能遵守Apple命名约定，特别是与内存管理规则（NARC）有关的命名约定。<br>长，描述性的方法和变量名称是很好的。变量命名以类型结尾 ，且要全拼。特殊情况可缩写</p>
 <h4 id="属性命名"><a href="#属性命名" class="headerlink" title="属性命名"></a>属性命名</h4><p>1 一般属性命名</p>
 <p><strong>Preferred:</strong></p>
@@ -484,7 +484,7 @@ height:50vh;
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">model</span><br><span class="line"></span><br><span class="line">dataModel： PHI + 模块名 + XXX + Model</span><br><span class="line"></span><br><span class="line">viewModel： PHI + 模块名 + XXX + VM</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">数据库表： PHI + XXX + Table</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Methods</p>
+<p>##Methods</p>
 <p>1 在方法中，方法类型后面应该有一个空格（ - / +符号）。 方法段之间应该有一个空格（匹配Apple的样式）。并在描述参数的参数前面加上描述性词语。<br>单词“and”的用法是保留的。 它不应该用于多个参数，如下面的initWithWidth：height：示例所示。</p>
 <p><strong>Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (void)setExampleText:(NSString *)text image:(UIImage *)image;</span><br><span class="line">- (void)sendAction:(SEL)aSelector to:(id)anObject forAllCells:(BOOL)flag;</span><br><span class="line">- (id)viewWithTag:(NSInteger)tag;</span><br><span class="line">- (instancetype)initWithWidth:(CGFloat)width height:(CGFloat)height;</span><br></pre></td></tr></table></figure>
@@ -499,7 +499,7 @@ height:50vh;
 <p><strong>Not Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">NSInteger arrayCount = self.array.count;</span><br><span class="line">[view setBackgroundColor:[UIColor orangeColor]];</span><br><span class="line">UIApplication.sharedApplication.delegate;</span><br><span class="line">Literals</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Variables</p>
+<p>##Variables</p>
 <p>1 变量应尽可能描述性地命名。 除了for（）循环外，应避免使用单个字母的变量名称。<br>指示指针的星号属于变量，例如，</p>
 <pre><code>NSString *text 不是NSString* text 或 NSString * text
 </code></pre><p>除了常量的情况,尽可能使用属性来代替实例变量。 虽然使用实例变量是一种行之有效的方式。</p>
@@ -513,7 +513,7 @@ height:50vh;
 <p><strong>Not Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">NSArray *names = [NSArray arrayWithObjects:@&quot;Brian&quot;, @&quot;Matt&quot;, @&quot;Chris&quot;, @&quot;Alex&quot;, @&quot;Steve&quot;, @&quot;Paul&quot;, nil];</span><br><span class="line">NSDictionary *productManagers = [NSDictionary dictionaryWithObjectsAndKeys: @&quot;Kate&quot;, @&quot;iPhone&quot;, @&quot;Kamal&quot;, @&quot;iPad&quot;, @&quot;Bill&quot;, @&quot;Mobile Web&quot;, nil];</span><br><span class="line">NSNumber *shouldUseLiterals = [NSNumber numberWithBool:YES];</span><br><span class="line">NSNumber *buildingStreetNumber = [NSNumber numberWithInteger:10018];</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Property Attributes</p>
+<p>##Property Attributes</p>
 <p>Property修饰关键字应该明确列出，并在阅读代码时帮助新程序员。nonatomic在前。xib拖出来的不需要调整</p>
 <p><strong>Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@property (nonatomic, weak) IBOutlet UIView *containerView;</span><br><span class="line">@property (nonatomic, strong) NSString *tutorialName;</span><br></pre></td></tr></table></figure>
@@ -525,21 +525,21 @@ height:50vh;
 <p><strong>Not Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@property (strong, nonatomic) NSString *tutorialName;</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Booleans</p>
+<p>##Booleans</p>
 <p>Objective-C使用YES和NO。 因此，true和false应该只用于CoreFoundation，C或C ++代码。 由于无解析为NO，所以不需要在条件下进行比较。 切勿将某些东西直接与YES进行比较，因为YES被定义为1，而BOOL可以高达8位。<br>这可以保证文件间的一致性和更高的视觉清晰度。</p>
 <p><strong>Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if (someObject) &#123;&#125;</span><br><span class="line">if (![anotherObject boolValue]) &#123;&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>Not Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if (someObject == nil) &#123;&#125;</span><br><span class="line">if ([anotherObject boolValue] == NO) &#123;&#125;</span><br><span class="line">if (isAwesome == YES) &#123;&#125; // Never do this.</span><br><span class="line">if (isAwesome == true) &#123;&#125; // Never do this.</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Conditionals</p>
+<p>##Conditionals</p>
 <p>即使if可以不带大括号（例如，只有一行，if也应始终使用大括号。</p>
 <p><strong>Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if (!error) &#123;</span><br><span class="line">  return success;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>Not Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if (!error)</span><br><span class="line">  return success;</span><br><span class="line">or</span><br><span class="line">if (!error) return success;</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Ternary Operator</p>
+<p>##Ternary Operator</p>
 <p>三元运算符的最佳用途是分配一个变量并决定使用哪个值。</p>
 <p>非布尔变量应与某些内容进行比较，并添加括号以提高可读性。 如果被比较的变量是布尔类型，则不需要括号。</p>
 <p><strong>Preferred:</strong></p>
@@ -547,25 +547,25 @@ height:50vh;
 <p><strong>Not Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result = a &gt; b ? x = c &gt; d ? c : d : y;</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Init Methods</p>
+<p>##Init Methods</p>
 <p>Init方法应遵循Apple生成的代码模板提供的约定。 还应该使用返回类型’instancetype’而不是’id’。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (instancetype)init &#123;</span><br><span class="line">  self = [super init];</span><br><span class="line">  if (self) &#123;</span><br><span class="line">    // ...</span><br><span class="line">  &#125;</span><br><span class="line">  return self;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Golden Path</p>
+<p>##Golden Path</p>
 <p>不要嵌套if语句，多个返回语句就可以。异常后面的代码无需去执行，这就叫黄金路径。</p>
 <p><strong>Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- (void)someMethod &#123;</span><br><span class="line">      if (![someOther boolValue]) &#123;</span><br><span class="line">         return;</span><br><span class="line">      &#125;</span><br><span class="line">      //Do something important</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>Not Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- (void)someMethod &#123;</span><br><span class="line">      if ([someOther boolValue]) &#123;</span><br><span class="line">          //Do something important</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Error handling</p>
+<p>##Error handling</p>
 <p>当方法通过引用返回一个错误参数时，打开返回的值，而不是错误变量。</p>
 <p><strong>Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">NSError *error;</span><br><span class="line">if (![self trySomethingWithError:&amp;error]) &#123;</span><br><span class="line">  // Handle Error</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>Not Preferred:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">NSError *error;</span><br><span class="line">[self trySomethingWithError:&amp;error];</span><br><span class="line">if (error) &#123;</span><br><span class="line">  // Handle Error</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###Line Breaks</p>
+<p>##Line Breaks</p>
 <p>换行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">For example:</span><br><span class="line"></span><br><span class="line">self.productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:productIdentifiers];</span><br><span class="line"></span><br><span class="line">self.productsRequest = [[SKProductsRequest alloc] </span><br><span class="line">  initWithProductIdentifiers:productIdentifiers];</span><br></pre></td></tr></table></figure>
 <hr>
@@ -582,7 +582,7 @@ height:50vh;
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@interface FXStepViewController ()&lt;UITableViewDelegate, UITableViewDataSource&gt;</span><br></pre></td></tr></table></figure>
 <p>3 集合类型加泛型</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">NSArray&lt;NSString *&gt;</span><br><span class="line">NSDictionary&lt;NSString *,id&gt;</span><br><span class="line">NSSet&lt;NSString *&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="命名缩写-待商定"><a href="#命名缩写-待商定" class="headerlink" title="命名缩写 待商定"></a>命名缩写 待商定</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">button : btn</span><br><span class="line">label : lab</span><br><span class="line">image :  img</span><br><span class="line">imageView : imgView</span><br><span class="line">backgroundView : bgView</span><br><span class="line"></span><br><span class="line">string ：str</span><br><span class="line">number : num</span><br><span class="line">array : arr</span><br><span class="line">dictionary : dict</span><br><span class="line"></span><br><span class="line">constraints : cons</span><br><span class="line">viewController : VC</span><br><span class="line">viewModel : VM</span><br></pre></td></tr></table></figure>
+<h2 id="命名缩写-待商定"><a href="#命名缩写-待商定" class="headerlink" title="命名缩写 待商定"></a>命名缩写 待商定</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">button : btn</span><br><span class="line">label : lab</span><br><span class="line">image :  img</span><br><span class="line">imageView : imgView</span><br><span class="line">backgroundView : bgView</span><br><span class="line"></span><br><span class="line">string ：str</span><br><span class="line">number : num</span><br><span class="line">array : arr</span><br><span class="line">dictionary : dict</span><br><span class="line"></span><br><span class="line">constraints : cons</span><br><span class="line">viewController : VC</span><br><span class="line">viewModel : VM</span><br></pre></td></tr></table></figure>
     </article>
     <!-- license  -->
     
@@ -723,7 +723,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#属性命名"><span class="toc-number">1.</span> <span class="toc-text">属性命名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常量命名"><span class="toc-number">2.</span> <span class="toc-text">常量命名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#局部变量命名"><span class="toc-number">3.</span> <span class="toc-text">局部变量命名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文件命名"><span class="toc-number">4.</span> <span class="toc-text">文件命名</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#h"><span class="toc-number"></span> <span class="toc-text">.h</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#m"><span class="toc-number"></span> <span class="toc-text">.m</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#命名缩写-待商定"><span class="toc-number"></span> <span class="toc-text">命名缩写 待商定</span></a>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#属性命名"><span class="toc-number">1.</span> <span class="toc-text">属性命名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常量命名"><span class="toc-number">2.</span> <span class="toc-text">常量命名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#局部变量命名"><span class="toc-number">3.</span> <span class="toc-text">局部变量命名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文件命名"><span class="toc-number">4.</span> <span class="toc-text">文件命名</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#h"><span class="toc-number"></span> <span class="toc-text">.h</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#m"><span class="toc-number"></span> <span class="toc-text">.m</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命名缩写-待商定"><span class="toc-number"></span> <span class="toc-text">命名缩写 待商定</span></a>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
