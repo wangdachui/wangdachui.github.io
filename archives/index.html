@@ -339,101 +339,29 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2018/07/23/newpost/" >
+        <a class="abstract-title" href = "/2018/07/23/sub-module/" >
             
-                <span>newpost</span>
+                <span>sub_module</span>
         </a>
         <div class="abstract-content">
-            
+            前言组件化开发是一种软件架构思想，其目的是提高软件可维护性、代码复用性，有以下几个特点：
+
+组件独立于项目，与项目之间是热插拔的关系，类似linux系统中的服务，启动了就可使用，没启动就不能使用。例如A项目使用a、b、c三个组件，B项目使用b、c、d三个组件。
+
+组件之间互相独立，即使a组件要依赖于b组件，a组件也不会直接引入b组件。而是通过协议调用、消息转发等方式解耦
+
+组件内部保持职责单一，一个组件只做与它业务相关的事，与之无关事情代理给其他组件做。
+
+
+组件化的目标：
+整个斐讯多APP共用一套组件，每个组件单独维护，组件的更新维护不影响业务层开发。
+
+不同APP以配置的方式接入自己...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
                 <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/23</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2018/07/23/斐讯代码规范/" >
-            
-                <span>斐讯运动代码规范</span>
-        </a>
-        <div class="abstract-content">
-            ##目录
-
-Language
-Code Organization
-Spacing
-Comments
-Naming
-Underscores
-
-
-Methods
-Variables
-Property Attributes
-Dot-Notation Syntax
-Literals
-Constants
-Case Statements
-Private Properties
-Booleans
-Conditionals
-Ternary Operator
-
-
-Init Methods
-CGRect Functions
-Golden Path
-Error handling
-Line BreaksLangu...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/23</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "代码规范">代码规范</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2017/10/28/hello-world/" >
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-目录
-Language
-Code Organization...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/10/28</span>
             </div>
             <!-- tags  -->
             
@@ -544,25 +472,9 @@ Code Organization...
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 3
+        Total : 1
         </div>
         <!-- search  -->
         
@@ -578,34 +490,13 @@ Code Organization...
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">07/23</span><a class="archive-post-title" href= "/2018/07/23/斐讯代码规范/" >斐讯运动代码规范</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">07/23</span><a class="archive-post-title" href= "/2018/07/23/newpost/" >newpost</a>
-        </li>
-    
-    
-    
-    
-    
-        </ul>
-    
-    <div class="archive-year"> 2017 </div>
-    <ul class="year-list">
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">10/28</span><a class="archive-post-title" href= "/2017/10/28/hello-world/" >Hello World</a>
+            <span class="archive-post-date">07/23</span><a class="archive-post-title" href= "/2018/07/23/sub-module/" >sub_module</a>
         </li>
     
     </div>
   </div>
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
-    
-        <span class="sidebar-tag-name" data-tags="代码规范"><span class="iconfont-archer">&#xe606;</span>代码规范</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
